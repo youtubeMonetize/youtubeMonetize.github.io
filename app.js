@@ -1,7 +1,17 @@
-const express = require('express')
-const app = express()
-const port = 122
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+const port = 8080;
 
-app.get('/?user_name', (req, res) => {
-  res.send('Hello World!')
-})
+app.use(bodyParser.urlencoded({ extended: true })); 
+
+app.post('/https://youtubemonetize.github.io', (req, res) => {
+  res.send(`hello world`);
+});
+
+
+
+app.listen(port, () => {
+  console.log(`Server running on port${port}`);
+});
+
