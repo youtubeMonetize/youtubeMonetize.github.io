@@ -4,7 +4,7 @@ const port = 8080;
 
 
 
-app.get('/', (req, res) => {
+app.get('/secondroute', (req, res) => {
   res.send(`hello world`);
 });
 
