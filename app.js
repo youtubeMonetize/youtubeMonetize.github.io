@@ -5,7 +5,7 @@ const port = 8080;
 
 app.use(bodyParser.urlencoded({ extended: true })); 
 
-app.post('/https://youtubemonetize.github.io', (req, res) => {
+app.post('/', (req, res) => {
   res.send(`hello world`);
 });
 
